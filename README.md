@@ -33,6 +33,7 @@ Class | Method | HTTP request | Description
 *ChannelsApi* | [**put_policy_channels_put**](docs/ChannelsApi.md#put_policy_channels_put) | **PUT** /channels/{id} | 
 *DocsApi* | [**get_swagger_json**](docs/DocsApi.md#get_swagger_json) | **GET** /docs/swagger.json | 
 *DocsApi* | [**get_swagger_yml**](docs/DocsApi.md#get_swagger_yml) | **GET** /docs/swagger.yml | 
+*EventsApi* | [**delete_events_parameters_delete**](docs/EventsApi.md#delete_events_parameters_delete) | **DELETE** /events/parameters/{app_key} | 
 *EventsApi* | [**get_events_get**](docs/EventsApi.md#get_events_get) | **GET** /events/{id} | 
 *EventsApi* | [**get_events_get_all**](docs/EventsApi.md#get_events_get_all) | **GET** /events | 
 *EventsApi* | [**get_events_parameters_get**](docs/EventsApi.md#get_events_parameters_get) | **GET** /events/parameters | 

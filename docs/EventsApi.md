@@ -4,11 +4,40 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**delete_events_parameters_delete**](EventsApi.md#delete_events_parameters_delete) | **DELETE** /events/parameters/{app_key} | 
 [**get_events_get**](EventsApi.md#get_events_get) | **GET** /events/{id} | 
 [**get_events_get_all**](EventsApi.md#get_events_get_all) | **GET** /events | 
 [**get_events_parameters_get**](EventsApi.md#get_events_parameters_get) | **GET** /events/parameters | 
 [**post_events_post**](EventsApi.md#post_events_post) | **POST** /events | 
 
+
+
+## delete_events_parameters_delete
+
+> String delete_events_parameters_delete(app_key)
+
+
+### Parameters
+
+
+Name | Type | Description  | Required | Notes
+------------- | ------------- | ------------- | ------------- | -------------
+**app_key** | **String** |  | [required] |
+
+### Return type
+
+**String**
+
+### Authorization
+
+[auth_token](../README.md#auth_token)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 
 ## get_events_get
