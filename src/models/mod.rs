@@ -1,5 +1,7 @@
 pub mod event_schema;
 pub use self::event_schema::EventSchema;
+pub mod notification_schema;
+pub use self::notification_schema::NotificationSchema;
 pub mod pagination_schema;
 pub use self::pagination_schema::PaginationSchema;
 pub mod policy_channel_schema;

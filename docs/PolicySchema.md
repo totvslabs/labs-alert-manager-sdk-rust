@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**channels** | [**serde_json::Value**](.md) | List of channel notification | 
+**channels** | **Vec<String>** | List of channel notification | 
 **client_source** | **String** | Policy Client source | 
 **client_uuid** | **String** | Policy Client UUID | 
 **created_at** | Option<**String**> |  | [optional]

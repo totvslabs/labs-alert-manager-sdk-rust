@@ -15,7 +15,7 @@
 pub struct PolicySchema {
     /// List of channel notification
     #[serde(rename = "channels")]
-    pub channels: serde_json::Value,
+    pub channels: Vec<String>,
     /// Policy Client source
     #[serde(rename = "client_source")]
     pub client_source: String,
@@ -62,7 +62,7 @@ pub struct PolicySchema {
 }
 
 impl PolicySchema {
-    pub fn new(channels: serde_json::Value, client_source: String, client_uuid: String, deleted: bool, enabled: bool, filters: serde_json::Value, frequency: bool, frequency_minutes: i32, frequency_occurrences: i32, id: String, labels: serde_json::Value, name: String, severity: String, r#type: String) -> PolicySchema {
+    pub fn new(channels: Vec<String>, client_source: String, client_uuid: String, deleted: bool, enabled: bool, filters: serde_json::Value, frequency: bool, frequency_minutes: i32, frequency_occurrences: i32, id: String, labels: serde_json::Value, name: String, severity: String, r#type: String) -> PolicySchema {
         PolicySchema {
             channels,
             client_source,

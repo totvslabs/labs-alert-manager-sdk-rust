@@ -41,6 +41,7 @@ Class | Method | HTTP request | Description
 *HealthCheckApi* | [**get_health_check**](docs/HealthCheckApi.md#get_health_check) | **GET** /health_check | 
 *NotificationsApi* | [**get_notification_log_get**](docs/NotificationsApi.md#get_notification_log_get) | **GET** /notifications/{id} | 
 *NotificationsApi* | [**get_notification_log_get_all**](docs/NotificationsApi.md#get_notification_log_get_all) | **GET** /notifications | 
+*NotificationsApi* | [**post_notification_log_resend**](docs/NotificationsApi.md#post_notification_log_resend) | **POST** /notifications/{id}/resend | 
 *PoliciesApi* | [**delete_policies_delete**](docs/PoliciesApi.md#delete_policies_delete) | **DELETE** /policies/{id} | 
 *PoliciesApi* | [**get_policies_get**](docs/PoliciesApi.md#get_policies_get) | **GET** /policies/{id} | 
 *PoliciesApi* | [**get_policies_get_all**](docs/PoliciesApi.md#get_policies_get_all) | **GET** /policies | 
@@ -52,6 +53,7 @@ Class | Method | HTTP request | Description
 ## Documentation For Models
 
  - [EventSchema](docs/EventSchema.md)
+ - [NotificationSchema](docs/NotificationSchema.md)
  - [PaginationSchema](docs/PaginationSchema.md)
  - [PolicyChannelSchema](docs/PolicyChannelSchema.md)
  - [PolicySchema](docs/PolicySchema.md)
