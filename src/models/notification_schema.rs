@@ -41,7 +41,7 @@ impl NotificationSchema {
         NotificationSchema {
             client_uuid,
             created_at: None,
-            events: None: None,
+            events: None,
             first_event: None,
             id,
             retries: None,

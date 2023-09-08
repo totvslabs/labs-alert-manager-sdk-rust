@@ -15,10 +15,7 @@ Name | Type | Description | Notes
 **frequency_minutes** | **i32** | Quantity of alert interval time | 
 **frequency_occurrences** | **i32** | Quantity of alert occurrencies | 
 **id** | **String** | Id | 
-**labels** | [**serde_json::Value**](.md) | Policy labels | 
 **name** | **String** | Policy name | 
-**severity** | **String** | Policy severity | 
-**r#type** | **String** | Policy type | 
 **updated_at** | Option<**String**> |  | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

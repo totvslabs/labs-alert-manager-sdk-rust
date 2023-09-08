@@ -45,24 +45,15 @@ pub struct PolicySchema {
     /// Id
     #[serde(rename = "id")]
     pub id: String,
-    /// Policy labels
-    #[serde(rename = "labels")]
-    pub labels: serde_json::Value,
     /// Policy name
     #[serde(rename = "name")]
     pub name: String,
-    /// Policy severity
-    #[serde(rename = "severity")]
-    pub severity: String,
-    /// Policy type
-    #[serde(rename = "type")]
-    pub r#type: String,
     #[serde(rename = "updated_at", skip_serializing_if = "Option::is_none")]
     pub updated_at: Option<String>,
 }
 
 impl PolicySchema {
-    pub fn new(channels: Vec<String>, client_source: String, client_uuid: String, deleted: bool, enabled: bool, filters: serde_json::Value, frequency: bool, frequency_minutes: i32, frequency_occurrences: i32, id: String, labels: serde_json::Value, name: String, severity: String, r#type: String) -> PolicySchema {
+    pub fn new(channels: Vec<String>, client_source: String, client_uuid: String, deleted: bool, enabled: bool, filters: serde_json::Value, frequency: bool, frequency_minutes: i32, frequency_occurrences: i32, id: String, name: String) -> PolicySchema {
         PolicySchema {
             channels,
             client_source,
@@ -75,10 +66,7 @@ impl PolicySchema {
             frequency_minutes,
             frequency_occurrences,
             id,
-            labels,
             name,
-            severity,
-            r#type,
             updated_at: None,
         }
     }
